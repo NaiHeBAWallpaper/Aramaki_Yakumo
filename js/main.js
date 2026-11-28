@@ -44,7 +44,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 
 const CHARACTER = 'CH0228';
@@ -61,21 +62,22 @@ const AUDIO_DETAIL = [
                 "意外と良い……かもしれません。"
             ],
             English: [
-                "Ooh... it's quite fluffy, isn't it?",
-                "This might actually be... surprisingly nice."
+                "Oh... It feels soft.",
+                "This might be nice..."
             ],
             Chinese: [
                 "哦哦……软乎乎的。",
                 "说不定……意外地不错呢"
             ],
             TraditionalChinese: [
-                "哦哦……軟乎乎的。",
-                "說不定……意外地不錯呢"
+                "哦哦……軟綿綿的呢。",
+                "意外還挺不錯的……也說不定。"
             ],
             Korean: [
-                "오... 꽤 푹신한 것 같아?",
-                "이건 정말... 놀랍도록 멋지겠죠."
-            ]
+                "오오…… 왠지 포근하네요.",
+                "나름 기분이 좋은 것 같기도……"
+            ],
+            Thai: ["โอ้ว... อบอุ่นจังเลยค่ะ","รู้สึกดีกว่าที่คิดนะเนี่ย..."]
         }
     },
     {
@@ -85,7 +87,7 @@ const AUDIO_DETAIL = [
                 "はくしょん！"
             ],
             English: [
-                "...Or so I thought, but nope, it's definitely cold.",
+                "Why did saying that give me chills?",
                 "Achoo!"
             ],
             Chinese: [
@@ -93,13 +95,14 @@ const AUDIO_DETAIL = [
                 "阿嚏！"
             ],
             TraditionalChinese: [
-                "……雖然是這麼想的，果然還是好冷。",
-                "阿嚏！"
+                "……本來是這麼想的，果然很冷呢。",
+                "哈啾！"
             ],
             Korean: [
-                "...나도 그렇게 생각했지만, 아니, 확실히 추워요.",
-                "아초오!"
-            ]
+                "그렇게 말하자마자 추워졌습니다.",
+                "엣취!"
+            ],
+            Thai: ["พูดจบปุ๊บ ก็หนาวขึ้นปั๊บเลยค่ะ","ฮัดชิ่ว!"]
         }
     },
     {
@@ -109,21 +112,22 @@ const AUDIO_DETAIL = [
                 "あれ？……まさか私にだけやらせるつもりですかぁ？"
             ],
             English: [
-                "Did you get the shot? Okay, next is your turn, Sensei.",
-                "Huh? ...You aren't planning on making *only* me do this, are you?"
+                "Did you get it? Now then, your turn.",
+                "Huh? Did you really mean to make me do this by myself?"
             ],
             Chinese: [
                 "拍好照了？那么轮到老师了。",
                 "诶……？难道您打算只让我一个人这样做吗？"
             ],
             TraditionalChinese: [
-                "拍好照了？那麼輪到老師了。",
-                "誒……？難道您打算只讓我一個人這樣做嗎？"
+                "拍好了嗎？那麼接下來輪到老師了。",
+                "咦？……您該不會打算只讓我一個人做吧？"
             ],
             Korean: [
-                "샷을 찍었나?",
-                "저만 이 일을 하게 만들려고 하지 않잖아요?"
-            ]
+                "다 되었나요? 그러면 이제, 선생님도 하시죠.",
+                "어라, 이거 저에게만 시킬 생각이셨나요?"
+            ],
+            Thai: ["เสร็จหรือยังคะ? ถ้างั้นก็ ถึงตาคุณครูแล้วค่ะ","เอ๋ จะสั่งให้ฉันทำ คนเดียวหรอกเหรอคะ?"]
         }
     },
     {
@@ -132,17 +136,18 @@ const AUDIO_DETAIL = [
                 "やれやれ、それはあまりにも安易だと思いますけどねぇ？先生？"
             ],
             English: [
-                "Good grief, I think that's a bit too naive of you, don't you agree? Sensei?"
+                "Dear, oh dear. I don't think that's very responsible of you, Sensei."
             ],
             Chinese: [
                 "哎呀呀，未免也太轻率了？老师？"
             ],
             TraditionalChinese: [
-                "哎呀呀，未免也太輕率了？老師？"
+                "真是的，那樣未免有點想得太簡單了吧？老師？"
             ],
             Korean: [
-                "미안해, 너무 순진한 것 같군, 동의하지 않니?"
-            ]
+                "저런, 저런. 그건 너무 안일하다고 생각하는데요, 선생님?"
+            ],
+            Thai: ["อะไรกัน แบบนี้มัน สบายเกินไปแล้ว นะคะคุณครู"]
         }
     },
     {
@@ -151,17 +156,18 @@ const AUDIO_DETAIL = [
                 "レッドウィンターの冬将軍は、みんなに平等ですよぉ？ムフフ。"
             ],
             English: [
-                "Red Winter's General Winter treats everyone equally, you know? Mufufu."
+                "Red Winter's cold is the same for everyone, you know? Heh, heh, heh."
             ],
             Chinese: [
                 "红冬的冬将军，对所有人都是一视同仁哦？姆呼呼。"
             ],
             TraditionalChinese: [
-                "紅冬的冬將軍，對所有人都是一視同仁哦？姆呼呼。"
+                "赤冬的的嚴寒，對所有人都是平等的唷？呣呵呵。"
             ],
             Korean: [
-                "레드 윈터의 장군 윈터는 모든 사람들을 똑같이 대합니다."
-            ]
+                "붉은겨울의 추위는, 모두에게 공평한 법이니까 말이죠? 힛. 힛. 히."
+            ],
+            Thai: ["ความหนาวในเรดวินเทอร์ เป็นสิ่งที่ยุติธรรม ทั่วถึงทุกคนนะคะ ฮิ ฮิ ฮิ"]
         }
     }
 ];
@@ -273,7 +279,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -442,6 +448,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -455,6 +471,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -464,7 +482,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 }
 
 function init() {
